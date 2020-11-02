@@ -1,6 +1,7 @@
 "use strict";
 
 const restify = require('restify');
+const corsMiddleware = require('restify-cors-middleware');
 const https = require('https');
 
 function getPublicPhoto(req, res, next) {
@@ -25,6 +26,10 @@ function getPublicPhoto(req, res, next) {
 }
 
 var server = restify.createServer();
+const cors = corsMiddleware({});
+ 
+server.pre(cors.preflight);
+server.use(cors.actual);
 server.get('/photos_public', getPublicPhoto);
 
 server.listen(8080, function() {

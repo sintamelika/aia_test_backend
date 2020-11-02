@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sintamelika/aia_test_backend#readme",
   "dependencies": {
-    "restify": "^8.5.1"
+    "restify": "^8.5.1",
+    "restify-cors-middleware": "^1.1.1"
   }
 }
