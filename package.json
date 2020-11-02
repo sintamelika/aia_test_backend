@@ -1,0 +1,22 @@
+{
+  "name": "aia-test-backend",
+  "version": "1.0.0",
+  "description": "API server for AIA Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sintamelika/aia_test_backend.git"
+  },
+  "author": "sinta amelika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sintamelika/aia_test_backend/issues"
+  },
+  "homepage": "https://github.com/sintamelika/aia_test_backend#readme",
+  "dependencies": {
+    "restify": "^8.5.1"
+  }
+}
