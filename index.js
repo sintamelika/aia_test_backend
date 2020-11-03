@@ -13,5 +13,5 @@ server.use(restify.plugins.queryParser())
 server.get('/photos_public', flickr.getPublicPhoto);
 
 server.listen(8080, function() {
-  console.log('%s listening at %s', server.name, server.url);
+  console.log('API Server listening at 8080');
 });
