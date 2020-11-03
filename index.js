@@ -9,6 +9,7 @@ const cors = corsMiddleware({});
  
 server.pre(cors.preflight);
 server.use(cors.actual);
+server.use(restify.plugins.queryParser())
 server.get('/photos_public', flickr.getPublicPhoto);
 
 server.listen(8080, function() {
